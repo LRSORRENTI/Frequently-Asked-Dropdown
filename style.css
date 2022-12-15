@@ -4,7 +4,7 @@
 
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0d5;
 }
 
 h1,
@@ -26,4 +26,17 @@ h2 {
 .faq-cont {
   max-width: 600px;
   margin: 0 auto;
+}
+.faq {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.faq.active {
+  background-color: white;
 }
