@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
@@ -14,13 +15,45 @@
   </head>
   <body>
     <h1>Frequently Asked Questions</h1>
+    <h2>AJAX and APIs FAQ</h2>
     <div class="faq-cont">
       <div class="faq-active">
-        <h3 class="faq-title">AJAX and APIs</h3>
+        <h3 class="faq-title">How can I make an AJAX call?</h3>
         <p class="faq-text">
           You can use any AJAX library you like with React. Some popular ones
           are Axios, jQuery AJAX, and the browser built-in window.fetch.
         </p>
+        <button>
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+        <h3 class="faq-title">
+          Where in the component lifecycle should I make an AJAX call?
+        </h3>
+        <p class="faq-text">
+          You should populate data with AJAX calls in the componentDidMount
+          lifecycle method. This is so you can use setState to update your
+          component when the data is retrieved.
+        </p>
+        <button>
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+        <h3 class="faq-title">
+          Example: Using AJAX results to set local state
+        </h3>
+        <p class="faq-text">
+          The component below demonstrates how to make an AJAX call in
+          componentDidMount to populate local component state. The example API
+          returns a JSON object like this:
+        </p>
+        <pre class="gatsby">
+        <code class="code">
+          { "items": [ { "id": 1, "name": "Apples", "price": "$2" }, { "id": 2,
+          "name": "Peaches", "price": "$5" } ] }
+        </code>
+        </pre>
+        <pre class="gatsby"></pre>
         <button>
           <i class="fas fa-chevron-down"></i>
           <i class="fas fa-times"></i>

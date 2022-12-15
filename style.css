@@ -1,3 +1,29 @@
-button {
-  padding: 30px;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f0f0f0;
+}
+
+h1,
+h2 {
+  margin: 50px 0 30px;
+  text-align: center;
+}
+
+.gatsby {
+  background: rgb(20, 44, 52);
+  color: white;
+  border-radius: 10px;
+  overflow: auto;
+  tab-size: 1rem;
+  max-width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+.faq-cont {
+  max-width: 600px;
+  margin: 0 auto;
 }
